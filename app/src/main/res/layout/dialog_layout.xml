@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:background="#FFEBEE"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Create New Contact"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D1C4E9"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/newname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/newphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newname"
+        android:hint="Phone"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:inputType="phone"
+        />
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/newphone"
+        android:text="Select image"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"
+        />
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_image"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="CREATE"
+        android:layout_margin="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
